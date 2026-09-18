@@ -1,1 +1,16 @@
-new file
+sdate = [20,19,21,20,21,22,23,23,23,24,23,22]     # List of constellation cutoff dates
+conts =['Capricorn','Aquarius','Pisces','Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn']
+# Input birthday and output constellation
+birth = input('Please enter your birthday in format:2001-02-21\n').strip(' ')
+cbir=birth.split('-')       # Split year, month, day into a list
+cmonth=str(cbir[1])         # Extract month data
+cdate=str(cbir[2])          # Extract day data
+def sign(cmonth,cdate):     # Function to judge constellation
+    if int(cdate)<sdate[int(cmonth)-1]:   # If day is earlier than cutoff date of current month
+        print(conts[int(cmonth)-1])        # Print constellation of current month
+        print(signs[int(cmonth)-1])        # Print constellation symbol of current month
+    else:
+        print(conts[int(cmonth)])          # Otherwise print constellation of next month
+        print(signs[int(cmonth)])          # Otherwise print constellation symbol of next month
+        
+sign(cmonth,cdate)          # Call constellation judgment function
