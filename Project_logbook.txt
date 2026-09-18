@@ -13,4 +13,4 @@ def sign(cmonth,cdate):     # Function to judge constellation
         print(conts[int(cmonth)])          # Otherwise print constellation of next month
         print(signs[int(cmonth)])          # Otherwise print constellation symbol of next month
         
-sign(cmonth,cdate)          # Call constellation judgment function
+sign(cmonth,cdate)          # Call constellation judgment function change by 5045087
