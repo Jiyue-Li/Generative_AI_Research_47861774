@@ -31,3 +31,7 @@ Example: `gai_survey_cleaned-responses_20260918_v1.csv`
 5. Open a pull request into `main` and wait for review before merging.
 
 If two people edit the same line, GitHub will flag a conflict. Fix it in the pull request, commit the resolution, then merge.
+
+## AI use
+
+Some of the file headings, comments, and commit messages in this repository were generated with AI. The folder structure, GitHub setup, and how the project is organised were done by me.
